@@ -1,0 +1,44 @@
+baseURL = "https://20230518.xyz"
+languageCode = "zh-cn"
+title = "生活的样子"
+
+theme = "PaperMod"
+
+[pagination]
+pagerSize = 10
+
+[params]
+description = "记录生活、记录美好"
+
+ShowReadingTime = true
+ShowShareButtons = true
+
+[[menu.main]]
+identifier = "life"
+name = "生活"
+url = "/life/"
+weight = 10
+
+[[menu.main]]
+identifier = "reading"
+name = "阅读"
+url = "/reading/"
+weight = 10
+
+[[menu.main]]
+identifier = "Reflection"
+name = "思考"
+url = "/Reflection/"
+weight = 20
+
+[[menu.main]]
+identifier = "growth"
+name = "成长"
+url = "/growth/"
+weight = 20
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 40
