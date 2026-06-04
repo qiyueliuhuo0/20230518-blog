@@ -10,8 +10,48 @@ pagerSize = 10
 [params]
 description = "记录生活、记录美好"
 
+defaultTheme = "auto"
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+
+# 启用首页个人主页模式
+
+[params.profileMode]
+enabled = true
+title = "生活的样子"
+subtitle = """
+记录生活、阅读、思考与成长
+
+
+"""
+
+# 首页图片
+
+imageUrl = "/images/home.jpg"
+imageTitle = "生活的样子"
+imageWidth = 260
+imageHeight = 260
+
+[[params.profileMode.buttons]]
+name = "生活"
+url = "/life/"
+
+[[params.profileMode.buttons]]
+name = "阅读"
+url = "/reading/"
+
+[[params.profileMode.buttons]]
+name = "思考"
+url = "/thinking/"
+
+
+[[params.profileMode.buttons]]
+name = "关于"
+url = "/about/"
+
+# 顶部菜单
 
 [[menu.main]]
 identifier = "life"
@@ -23,22 +63,17 @@ weight = 10
 identifier = "reading"
 name = "阅读"
 url = "/reading/"
-weight = 10
+weight = 20
 
 [[menu.main]]
-identifier = "Reflection"
+identifier = "thinking"
 name = "思考"
-url = "/Reflection/"
-weight = 20
+url = "/thinking/"
+weight = 30
 
-[[menu.main]]
-identifier = "growth"
-name = "成长"
-url = "/growth/"
-weight = 20
 
 [[menu.main]]
 identifier = "about"
 name = "关于"
 url = "/about/"
-weight = 40
+weight = 50
